@@ -1,45 +1,21 @@
-#importamos las librerias 
-import os 
+#import libraries
+import os
 
-Rb1deposito=0
-Rb2retirodinero=0
-Rb3md=0
-rb4changekey=0
-while Rb1deposito == 0:
-    os.system("Cls")
 
-    #menu - atm
-    print("1.->deposito de dinero")
-    print("2.->retiro de dinero")
-    print("3.->mostrar saldo de cuenta")
-    print("4.->cambio de clave")
-    print("5.->salir")
+Rb1deposit=0
+Rb2witdrawal=0
+rb3show_balance=0
+rb4change_key=0
+while Rb1deposit == 0:
+    os.system("cls")
 
-    #pedimos la opcion al usuario
-    vop= int(input("su opcion: "))
 
-    #procesamos la opcion 
-    if vop == 1:
-        
-        #cuanto quiere depositar 
-        vcantidad = int(input("cuanto quiere depositar:"))
-        
-        #mostramos un mensaje de confirmacion 
-        input("deposito realizado con exito,pulse ENTER")
-    
-    elif vop == 2: 
-        #cuanto quiere retirar
-        vcantidad = int(input("cuanto dinero quiere retirar"))
-
-        #mostramos un mensaje de confirmacion
-        input("retiro realizado con exito,pulse ENTER")
-
-    elif vop == 3:  
-        #saldo total de la cuenta 
-        vcantidad = int(input("saldo mostrado:")) 
-    
-        #muestranos un mensaje de confirmacion 
-        input("saldo mostrado con exito,pulse ENTER")
+    #ATM menu
+    print("1.->deposit money")
+    print("2.->withdraw money")
+    print("3.->show account balance")
+    print("4.->change password")
+    print("5.->exit")
 
      
             

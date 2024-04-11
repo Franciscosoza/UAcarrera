@@ -1,4 +1,32 @@
-#marra
+# Importamos las librerías
+import os
+# Variables
+vcontinuar = "s"
+vtotal = 0.0
+
+# Bucle principal
+while vcontinuar == "s":
+
+    # Limpiamos la pantalla
+    os.system("cls")
+
+    # Mostramos el menú
+    print()
+    print("*** MENU *****")
+    print("1-> Marraqueta")
+    print("2-> Ayuyas")
+    print("3-> Sopaipilla")
+    print("4-> Salir")
+
+    # Pedimos la opción del usuario
+    vopcion = int(input("Su opción: "))
+
+    # Procesamos la opción
+    if vopcion == 1:
+        # Pedimos la cantidad de marraquetas
+        vcantidad = int(input("Cuantas marraquetas: "))
+
+        # Actualizamos el total
         vtotal = vtotal + (vcantidad * 0.5)
 
         # Mostramos un mensaje de confirmación
@@ -13,7 +41,6 @@
 
         # Mostramos un mensaje de confirmación
         input("Venta realizada con éxito, pulse ENTER")
-
     elif vopcion == 3:
         # Pedimos la cantidad de sopaipillas
         vcantidad = int(input("Cuantas sopaipillas: "))
